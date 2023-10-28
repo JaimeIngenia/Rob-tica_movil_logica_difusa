@@ -1,0 +1,15 @@
+running develop
+running egg_info
+writing pkg_entrega1.egg-info/PKG-INFO
+writing dependency_links to pkg_entrega1.egg-info/dependency_links.txt
+writing entry points to pkg_entrega1.egg-info/entry_points.txt
+writing requirements to pkg_entrega1.egg-info/requires.txt
+writing top-level names to pkg_entrega1.egg-info/top_level.txt
+reading manifest file 'pkg_entrega1.egg-info/SOURCES.txt'
+writing manifest file 'pkg_entrega1.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/jaime/ros2_ws/src/install/pkg_entrega1/lib/python3.8/site-packages/pkg-entrega1.egg-link (link to .)
+Installing nodo_publicador script to /home/jaime/ros2_ws/src/install/pkg_entrega1/lib/pkg_entrega1
+
+Installed /home/jaime/ros2_ws/src/build/pkg_entrega1
+running install_data

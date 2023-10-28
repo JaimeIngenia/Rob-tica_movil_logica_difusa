@@ -1,0 +1,25 @@
+[3.984s] Invoking command in '/home/jaime/ros2_ws/src/build/pkg_entrega2_v_quieta': PYTHONPATH=/home/jaime/ros2_ws/src/build/pkg_entrega2_v_quieta/prefix_override:/home/jaime/ros2_ws/src/install/pkg_entrega2_v_quieta/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/jaime/ros2_ws/src/build/pkg_entrega2_v_quieta/build --no-deps install_data
+[4.666s] running develop
+[4.927s] running egg_info
+[4.927s] creating pkg_entrega2_v_quieta.egg-info
+[4.927s] writing pkg_entrega2_v_quieta.egg-info/PKG-INFO
+[4.932s] writing dependency_links to pkg_entrega2_v_quieta.egg-info/dependency_links.txt
+[4.932s] writing entry points to pkg_entrega2_v_quieta.egg-info/entry_points.txt
+[4.966s] writing requirements to pkg_entrega2_v_quieta.egg-info/requires.txt
+[4.966s] writing top-level names to pkg_entrega2_v_quieta.egg-info/top_level.txt
+[4.967s] writing manifest file 'pkg_entrega2_v_quieta.egg-info/SOURCES.txt'
+[5.042s] reading manifest file 'pkg_entrega2_v_quieta.egg-info/SOURCES.txt'
+[5.042s] writing manifest file 'pkg_entrega2_v_quieta.egg-info/SOURCES.txt'
+[5.102s] running build_ext
+[5.103s] Creating /home/jaime/ros2_ws/src/install/pkg_entrega2_v_quieta/lib/python3.8/site-packages/site.py
+[5.108s] Creating /home/jaime/ros2_ws/src/install/pkg_entrega2_v_quieta/lib/python3.8/site-packages/pkg-entrega2-v-quieta.egg-link (link to .)
+[5.112s] Installing nodo_publicador script to /home/jaime/ros2_ws/src/install/pkg_entrega2_v_quieta/lib/pkg_entrega2_v_quieta
+[5.112s] 
+[5.112s] Installed /home/jaime/ros2_ws/src/build/pkg_entrega2_v_quieta
+[5.112s] running install_data
+[5.112s] creating /home/jaime/ros2_ws/src/install/pkg_entrega2_v_quieta/share/ament_index
+[5.112s] creating /home/jaime/ros2_ws/src/install/pkg_entrega2_v_quieta/share/ament_index/resource_index
+[5.112s] creating /home/jaime/ros2_ws/src/install/pkg_entrega2_v_quieta/share/ament_index/resource_index/packages
+[5.113s] copying resource/pkg_entrega2_v_quieta -> /home/jaime/ros2_ws/src/install/pkg_entrega2_v_quieta/share/ament_index/resource_index/packages
+[5.113s] copying package.xml -> /home/jaime/ros2_ws/src/install/pkg_entrega2_v_quieta/share/pkg_entrega2_v_quieta
+[5.338s] Invoked command in '/home/jaime/ros2_ws/src/build/pkg_entrega2_v_quieta' returned '0': PYTHONPATH=/home/jaime/ros2_ws/src/build/pkg_entrega2_v_quieta/prefix_override:/home/jaime/ros2_ws/src/install/pkg_entrega2_v_quieta/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/jaime/ros2_ws/src/build/pkg_entrega2_v_quieta/build --no-deps install_data

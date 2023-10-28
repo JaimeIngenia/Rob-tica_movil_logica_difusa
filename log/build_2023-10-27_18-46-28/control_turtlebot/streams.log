@@ -1,0 +1,20 @@
+[4.556s] Invoking command in '/home/jaime/ros2_ws/src/build/control_turtlebot': PYTHONPATH=/home/jaime/ros2_ws/src/build/control_turtlebot/prefix_override:/home/jaime/ros2_ws/src/install/control_turtlebot/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/jaime/ros2_ws/src/build/control_turtlebot/build --no-deps install_data
+[5.241s] running develop
+[5.592s] running egg_info
+[5.594s] writing control_turtlebot.egg-info/PKG-INFO
+[5.596s] writing dependency_links to control_turtlebot.egg-info/dependency_links.txt
+[5.622s] writing entry points to control_turtlebot.egg-info/entry_points.txt
+[5.625s] writing requirements to control_turtlebot.egg-info/requires.txt
+[5.627s] writing top-level names to control_turtlebot.egg-info/top_level.txt
+[5.693s] reading manifest file 'control_turtlebot.egg-info/SOURCES.txt'
+[5.696s] writing manifest file 'control_turtlebot.egg-info/SOURCES.txt'
+[5.761s] running build_ext
+[5.776s] Creating /home/jaime/ros2_ws/src/install/control_turtlebot/lib/python3.8/site-packages/control-turtlebot.egg-link (link to .)
+[5.780s] Installing nodo_publicador script to /home/jaime/ros2_ws/src/install/control_turtlebot/lib/control_turtlebot
+[5.780s] Installing nodo_publicador_domingo script to /home/jaime/ros2_ws/src/install/control_turtlebot/lib/control_turtlebot
+[5.782s] Installing nodo_publicador_profe_no_tocar script to /home/jaime/ros2_ws/src/install/control_turtlebot/lib/control_turtlebot
+[5.782s] Installing nodo_publicador_viernes script to /home/jaime/ros2_ws/src/install/control_turtlebot/lib/control_turtlebot
+[5.783s] 
+[5.784s] Installed /home/jaime/ros2_ws/src/build/control_turtlebot
+[5.784s] running install_data
+[6.338s] Invoked command in '/home/jaime/ros2_ws/src/build/control_turtlebot' returned '0': PYTHONPATH=/home/jaime/ros2_ws/src/build/control_turtlebot/prefix_override:/home/jaime/ros2_ws/src/install/control_turtlebot/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/jaime/ros2_ws/src/build/control_turtlebot/build --no-deps install_data

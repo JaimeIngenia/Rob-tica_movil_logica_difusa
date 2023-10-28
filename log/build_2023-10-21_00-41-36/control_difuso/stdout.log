@@ -1,0 +1,22 @@
+running develop
+running egg_info
+creating control_difuso.egg-info
+writing control_difuso.egg-info/PKG-INFO
+writing dependency_links to control_difuso.egg-info/dependency_links.txt
+writing entry points to control_difuso.egg-info/entry_points.txt
+writing requirements to control_difuso.egg-info/requires.txt
+writing top-level names to control_difuso.egg-info/top_level.txt
+writing manifest file 'control_difuso.egg-info/SOURCES.txt'
+reading manifest file 'control_difuso.egg-info/SOURCES.txt'
+writing manifest file 'control_difuso.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/jaime/ros2_ws/src/install/control_difuso/lib/python3.8/site-packages/site.py
+Creating /home/jaime/ros2_ws/src/install/control_difuso/lib/python3.8/site-packages/control-difuso.egg-link (link to .)
+
+Installed /home/jaime/ros2_ws/src/build/control_difuso
+running install_data
+creating /home/jaime/ros2_ws/src/install/control_difuso/share/ament_index
+creating /home/jaime/ros2_ws/src/install/control_difuso/share/ament_index/resource_index
+creating /home/jaime/ros2_ws/src/install/control_difuso/share/ament_index/resource_index/packages
+copying resource/control_difuso -> /home/jaime/ros2_ws/src/install/control_difuso/share/ament_index/resource_index/packages
+copying package.xml -> /home/jaime/ros2_ws/src/install/control_difuso/share/control_difuso

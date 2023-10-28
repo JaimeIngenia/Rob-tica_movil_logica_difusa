@@ -1,0 +1,3 @@
+[console_scripts]
+nodo_publicador = pkg_entrega1_v2.ejercicio1:main
+

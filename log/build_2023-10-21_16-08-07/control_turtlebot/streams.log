@@ -1,0 +1,19 @@
+[4.419s] Invoking command in '/home/jaime/ros2_ws/src/build/control_turtlebot': PYTHONPATH=/home/jaime/ros2_ws/src/build/control_turtlebot/prefix_override:/home/jaime/ros2_ws/src/install/control_turtlebot/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/jaime/ros2_ws/src/build/control_turtlebot/build --no-deps install_data
+[5.027s] running develop
+[5.356s] running egg_info
+[5.356s] writing control_turtlebot.egg-info/PKG-INFO
+[5.390s] writing dependency_links to control_turtlebot.egg-info/dependency_links.txt
+[5.390s] writing entry points to control_turtlebot.egg-info/entry_points.txt
+[5.390s] writing requirements to control_turtlebot.egg-info/requires.txt
+[5.390s] writing top-level names to control_turtlebot.egg-info/top_level.txt
+[5.496s] reading manifest file 'control_turtlebot.egg-info/SOURCES.txt'
+[5.502s] writing manifest file 'control_turtlebot.egg-info/SOURCES.txt'
+[5.622s] running build_ext
+[5.624s] Creating /home/jaime/ros2_ws/src/install/control_turtlebot/lib/python3.8/site-packages/control-turtlebot.egg-link (link to .)
+[5.630s] Installing nodo_publicador script to /home/jaime/ros2_ws/src/install/control_turtlebot/lib/control_turtlebot
+[5.633s] Installing nodo_publicador_profe_no_tocar script to /home/jaime/ros2_ws/src/install/control_turtlebot/lib/control_turtlebot
+[5.635s] Installing nodo_publicador_viernes script to /home/jaime/ros2_ws/src/install/control_turtlebot/lib/control_turtlebot
+[5.638s] 
+[5.639s] Installed /home/jaime/ros2_ws/src/build/control_turtlebot
+[5.640s] running install_data
+[6.320s] Invoked command in '/home/jaime/ros2_ws/src/build/control_turtlebot' returned '0': PYTHONPATH=/home/jaime/ros2_ws/src/build/control_turtlebot/prefix_override:/home/jaime/ros2_ws/src/install/control_turtlebot/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/jaime/ros2_ws/src/build/control_turtlebot/build --no-deps install_data

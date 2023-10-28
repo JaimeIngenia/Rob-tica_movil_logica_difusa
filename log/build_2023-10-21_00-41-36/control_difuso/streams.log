@@ -1,0 +1,24 @@
+[4.261s] Invoking command in '/home/jaime/ros2_ws/src/build/control_difuso': PYTHONPATH=/home/jaime/ros2_ws/src/build/control_difuso/prefix_override:/home/jaime/ros2_ws/src/install/control_difuso/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/jaime/ros2_ws/src/build/control_difuso/build --no-deps install_data
+[5.189s] running develop
+[5.435s] running egg_info
+[5.437s] creating control_difuso.egg-info
+[5.438s] writing control_difuso.egg-info/PKG-INFO
+[5.439s] writing dependency_links to control_difuso.egg-info/dependency_links.txt
+[5.441s] writing entry points to control_difuso.egg-info/entry_points.txt
+[5.442s] writing requirements to control_difuso.egg-info/requires.txt
+[5.443s] writing top-level names to control_difuso.egg-info/top_level.txt
+[5.444s] writing manifest file 'control_difuso.egg-info/SOURCES.txt'
+[5.521s] reading manifest file 'control_difuso.egg-info/SOURCES.txt'
+[5.530s] writing manifest file 'control_difuso.egg-info/SOURCES.txt'
+[5.606s] running build_ext
+[5.613s] Creating /home/jaime/ros2_ws/src/install/control_difuso/lib/python3.8/site-packages/site.py
+[5.616s] Creating /home/jaime/ros2_ws/src/install/control_difuso/lib/python3.8/site-packages/control-difuso.egg-link (link to .)
+[5.617s] 
+[5.633s] Installed /home/jaime/ros2_ws/src/build/control_difuso
+[5.633s] running install_data
+[5.634s] creating /home/jaime/ros2_ws/src/install/control_difuso/share/ament_index
+[5.635s] creating /home/jaime/ros2_ws/src/install/control_difuso/share/ament_index/resource_index
+[5.635s] creating /home/jaime/ros2_ws/src/install/control_difuso/share/ament_index/resource_index/packages
+[5.636s] copying resource/control_difuso -> /home/jaime/ros2_ws/src/install/control_difuso/share/ament_index/resource_index/packages
+[5.637s] copying package.xml -> /home/jaime/ros2_ws/src/install/control_difuso/share/control_difuso
+[5.830s] Invoked command in '/home/jaime/ros2_ws/src/build/control_difuso' returned '0': PYTHONPATH=/home/jaime/ros2_ws/src/build/control_difuso/prefix_override:/home/jaime/ros2_ws/src/install/control_difuso/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/jaime/ros2_ws/src/build/control_difuso/build --no-deps install_data

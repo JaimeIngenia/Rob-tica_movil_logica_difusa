@@ -1,0 +1,14 @@
+package.xml
+setup.cfg
+setup.py
+pkg_entrega2/__init__.py
+pkg_entrega2/ejercicio1.py
+pkg_entrega2/visual_imagen.py
+pkg_entrega2.egg-info/PKG-INFO
+pkg_entrega2.egg-info/SOURCES.txt
+pkg_entrega2.egg-info/dependency_links.txt
+pkg_entrega2.egg-info/entry_points.txt
+pkg_entrega2.egg-info/requires.txt
+pkg_entrega2.egg-info/top_level.txt
+pkg_entrega2.egg-info/zip-safe
+resource/pkg_entrega2

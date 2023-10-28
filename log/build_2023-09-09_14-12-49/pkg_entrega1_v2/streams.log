@@ -1,0 +1,25 @@
+[2.623s] Invoking command in '/home/jaime/ros2_ws/src/build/pkg_entrega1_v2': PYTHONPATH=/home/jaime/ros2_ws/src/build/pkg_entrega1_v2/prefix_override:/home/jaime/ros2_ws/src/install/pkg_entrega1_v2/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/jaime/ros2_ws/src/build/pkg_entrega1_v2/build --no-deps install_data
+[3.095s] running develop
+[3.302s] running egg_info
+[3.303s] creating pkg_entrega1_v2.egg-info
+[3.304s] writing pkg_entrega1_v2.egg-info/PKG-INFO
+[3.305s] writing dependency_links to pkg_entrega1_v2.egg-info/dependency_links.txt
+[3.306s] writing entry points to pkg_entrega1_v2.egg-info/entry_points.txt
+[3.307s] writing requirements to pkg_entrega1_v2.egg-info/requires.txt
+[3.308s] writing top-level names to pkg_entrega1_v2.egg-info/top_level.txt
+[3.366s] writing manifest file 'pkg_entrega1_v2.egg-info/SOURCES.txt'
+[3.439s] reading manifest file 'pkg_entrega1_v2.egg-info/SOURCES.txt'
+[3.440s] writing manifest file 'pkg_entrega1_v2.egg-info/SOURCES.txt'
+[3.508s] running build_ext
+[3.513s] Creating /home/jaime/ros2_ws/src/install/pkg_entrega1_v2/lib/python3.8/site-packages/site.py
+[3.515s] Creating /home/jaime/ros2_ws/src/install/pkg_entrega1_v2/lib/python3.8/site-packages/pkg-entrega1-v2.egg-link (link to .)
+[3.517s] Installing nodo_publicador script to /home/jaime/ros2_ws/src/install/pkg_entrega1_v2/lib/pkg_entrega1_v2
+[3.518s] 
+[3.518s] Installed /home/jaime/ros2_ws/src/build/pkg_entrega1_v2
+[3.519s] running install_data
+[3.519s] creating /home/jaime/ros2_ws/src/install/pkg_entrega1_v2/share/ament_index
+[3.520s] creating /home/jaime/ros2_ws/src/install/pkg_entrega1_v2/share/ament_index/resource_index
+[3.520s] creating /home/jaime/ros2_ws/src/install/pkg_entrega1_v2/share/ament_index/resource_index/packages
+[3.520s] copying resource/pkg_entrega1_v2 -> /home/jaime/ros2_ws/src/install/pkg_entrega1_v2/share/ament_index/resource_index/packages
+[3.521s] copying package.xml -> /home/jaime/ros2_ws/src/install/pkg_entrega1_v2/share/pkg_entrega1_v2
+[3.661s] Invoked command in '/home/jaime/ros2_ws/src/build/pkg_entrega1_v2' returned '0': PYTHONPATH=/home/jaime/ros2_ws/src/build/pkg_entrega1_v2/prefix_override:/home/jaime/ros2_ws/src/install/pkg_entrega1_v2/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/jaime/ros2_ws/src/build/pkg_entrega1_v2/build --no-deps install_data

@@ -1,0 +1,15 @@
+package.xml
+setup.cfg
+setup.py
+control_difuso/__init__.py
+control_difuso/ejercicio1_logica_fuzzy.py
+control_difuso/ejercicio2_logica_difusa_ejercicio_avion.py
+control_difuso/prueba_viernes_logica_difusa_entrega3.py
+control_difuso.egg-info/PKG-INFO
+control_difuso.egg-info/SOURCES.txt
+control_difuso.egg-info/dependency_links.txt
+control_difuso.egg-info/entry_points.txt
+control_difuso.egg-info/requires.txt
+control_difuso.egg-info/top_level.txt
+control_difuso.egg-info/zip-safe
+resource/control_difuso

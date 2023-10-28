@@ -1,0 +1,13 @@
+package.xml
+setup.cfg
+setup.py
+pkg_entrega2_v_quieta/__init__.py
+pkg_entrega2_v_quieta/ejercicio1.py
+pkg_entrega2_v_quieta.egg-info/PKG-INFO
+pkg_entrega2_v_quieta.egg-info/SOURCES.txt
+pkg_entrega2_v_quieta.egg-info/dependency_links.txt
+pkg_entrega2_v_quieta.egg-info/entry_points.txt
+pkg_entrega2_v_quieta.egg-info/requires.txt
+pkg_entrega2_v_quieta.egg-info/top_level.txt
+pkg_entrega2_v_quieta.egg-info/zip-safe
+resource/pkg_entrega2_v_quieta

@@ -1,0 +1,17 @@
+[5.599s] Invoking command in '/home/jaime/ros2_ws/src/build/pkg_entrega2': PYTHONPATH=/home/jaime/ros2_ws/src/build/pkg_entrega2/prefix_override:/home/jaime/ros2_ws/src/install/pkg_entrega2/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/jaime/ros2_ws/src/build/pkg_entrega2/build --no-deps install_data
+[6.314s] running develop
+[6.859s] running egg_info
+[6.860s] writing pkg_entrega2.egg-info/PKG-INFO
+[6.862s] writing dependency_links to pkg_entrega2.egg-info/dependency_links.txt
+[6.862s] writing entry points to pkg_entrega2.egg-info/entry_points.txt
+[6.862s] writing requirements to pkg_entrega2.egg-info/requires.txt
+[6.862s] writing top-level names to pkg_entrega2.egg-info/top_level.txt
+[7.049s] reading manifest file 'pkg_entrega2.egg-info/SOURCES.txt'
+[7.053s] writing manifest file 'pkg_entrega2.egg-info/SOURCES.txt'
+[7.198s] running build_ext
+[7.198s] Creating /home/jaime/ros2_ws/src/install/pkg_entrega2/lib/python3.8/site-packages/pkg-entrega2.egg-link (link to .)
+[7.201s] Installing nodo_publicador script to /home/jaime/ros2_ws/src/install/pkg_entrega2/lib/pkg_entrega2
+[7.208s] 
+[7.208s] Installed /home/jaime/ros2_ws/src/build/pkg_entrega2
+[7.213s] running install_data
+[7.666s] Invoked command in '/home/jaime/ros2_ws/src/build/pkg_entrega2' returned '0': PYTHONPATH=/home/jaime/ros2_ws/src/build/pkg_entrega2/prefix_override:/home/jaime/ros2_ws/src/install/pkg_entrega2/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/jaime/ros2_ws/src/build/pkg_entrega2/build --no-deps install_data

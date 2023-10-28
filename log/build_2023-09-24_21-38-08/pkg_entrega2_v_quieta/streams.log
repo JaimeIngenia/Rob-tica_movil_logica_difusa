@@ -1,0 +1,17 @@
+[3.123s] Invoking command in '/home/jaime/ros2_ws/src/build/pkg_entrega2_v_quieta': PYTHONPATH=/home/jaime/ros2_ws/src/build/pkg_entrega2_v_quieta/prefix_override:/home/jaime/ros2_ws/src/install/pkg_entrega2_v_quieta/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/jaime/ros2_ws/src/build/pkg_entrega2_v_quieta/build --no-deps install_data
+[3.725s] running develop
+[3.916s] running egg_info
+[3.917s] writing pkg_entrega2_v_quieta.egg-info/PKG-INFO
+[3.918s] writing dependency_links to pkg_entrega2_v_quieta.egg-info/dependency_links.txt
+[3.919s] writing entry points to pkg_entrega2_v_quieta.egg-info/entry_points.txt
+[3.919s] writing requirements to pkg_entrega2_v_quieta.egg-info/requires.txt
+[3.920s] writing top-level names to pkg_entrega2_v_quieta.egg-info/top_level.txt
+[3.972s] reading manifest file 'pkg_entrega2_v_quieta.egg-info/SOURCES.txt'
+[3.989s] writing manifest file 'pkg_entrega2_v_quieta.egg-info/SOURCES.txt'
+[4.142s] running build_ext
+[4.142s] Creating /home/jaime/ros2_ws/src/install/pkg_entrega2_v_quieta/lib/python3.8/site-packages/pkg-entrega2-v-quieta.egg-link (link to .)
+[4.154s] Installing nodo_publicador script to /home/jaime/ros2_ws/src/install/pkg_entrega2_v_quieta/lib/pkg_entrega2_v_quieta
+[4.154s] 
+[4.154s] Installed /home/jaime/ros2_ws/src/build/pkg_entrega2_v_quieta
+[4.154s] running install_data
+[4.522s] Invoked command in '/home/jaime/ros2_ws/src/build/pkg_entrega2_v_quieta' returned '0': PYTHONPATH=/home/jaime/ros2_ws/src/build/pkg_entrega2_v_quieta/prefix_override:/home/jaime/ros2_ws/src/install/pkg_entrega2_v_quieta/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/jaime/ros2_ws/src/build/pkg_entrega2_v_quieta/build --no-deps install_data
