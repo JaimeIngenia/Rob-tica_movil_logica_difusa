@@ -17,8 +17,8 @@ velocidad_lineal = crtl.Antecedent(np.arange(0,1,0.01),"velocidad_lineal")
 distancia['cerca'] = fuzz.trimf(distancia.universe, [0.19,0.3,0.6])#punta del robot 0.19 y termina en 0.3 
 distancia['lejos'] = fuzz.trimf(distancia.universe, [0.4,0.7,1.1])
 
-#distancia.view()
-#plt.show()
+distancia.view()
+plt.show()
 
 
 #Variable entrada de distancia
@@ -26,20 +26,28 @@ distancia['lejos'] = fuzz.trimf(distancia.universe, [0.4,0.7,1.1])
 orientacion['izq'] = fuzz.trimf(orientacion.universe, [0.0,45,45])#[-1,45,45])
 orientacion['der'] = fuzz.trimf(orientacion.universe, [45,45,90])#[45,45,91])
 
-import matplotlib.pyplot as plt
-orientacion.view()
-plt.show()
+#import matplotlib.pyplot as plt
+#orientacion.view()
+#plt.show()
 
 
-#Variable entrada de distancia
+
+#Variable entrada de velocidad_lineal
 
 velocidad_lineal['baja'] = fuzz.trimf(velocidad_lineal.universe, [0.0, 0.07, 0.15])
-velocidad_lineal['alta'] = fuzz.trimf(velocidad_lineal.universe, [0.07, 0.015, 0.2])
+velocidad_lineal['alta'] = fuzz.trimf(velocidad_lineal.universe, [0.07, 0.15, 0.2])
 
-velocidad_angular['izq'] = fuzz.trimf(velocidad_angular.universe, [-1,-0.5,-0.01])
-velocidad_angular['der'] = fuzz.trimf(velocidad_angular.universe, [0.01,0.5,1])
-velocidad_angular['centro'] = fuzz.trimf(velocidad_angular.universe, [-0.01,0,0.01])
+#GRaficar las funciones de pertenencia
+velocidad_lineal.view()
+#velocidad_ventilador.view()
+plt.show()
 
+#Variable entrada de velocidad_angular
+#ES PARA QUE TOME LA ORIENTACIÒN DERECHO O IZQUIERDA
+
+velocidad_angular['izq'] = fuzz.trimf(velocidad_angular.universe, [-1,-0.5,-0.01])#[-1,-0.5,-0.01])
+velocidad_angular['centro'] = fuzz.trimf(velocidad_angular.universe, [-0.01,0,0.01])#[-0.01,0,0.01])
+velocidad_angular['der'] = fuzz.trimf(velocidad_angular.universe, [0.01,0.5,1])#[0.01,0.5,1])
 
 
 
@@ -63,6 +71,7 @@ regla4 = crtl.Rule(
     (velocidad_lineal["baja"],velocidad_angular["der"])
     )
 
+
 controlador = crtl.ControlSystem([regla1,regla2,regla3,regla4])
 simulador = crtl.ControlSystemSimulation(controlador)
 
@@ -76,6 +85,25 @@ print("VElocidad del ventilador MIRAR JULIAN y ANdres:" , simulador.output[ "vel
 
 
 #GRaficar las funciones de pertenencia
-distancia.view()
+#distancia.view()
 #velocidad_ventilador.view()
-plt.show()
+#plt.show()
+
+
+
+
+#PEGA DE LOGICA_DIFUSA.PY
+#Definir entradas (antecedentes y consecuentes)
+
+#distancia   = crtl.Antecedent(np.arange(0.2 , 1 , 0.01), "distancia")
+
+#orientacion = crtl.Antecedent(np.arange(0.0 , 90, 0.01), "orientacion")
+
+ #Definir  salidas (antecedentes y consecuentes)
+
+#velocidad_lineal  = crtl.Consequent(np.arange( 0.0 , 0.2 ,0.01), "velocidad_lineal")
+
+#velocidad_angular = crtl.Consequent(np.arange(-1   ,  1  , 0.01), "velocidad_angular")
+
+ 
+
