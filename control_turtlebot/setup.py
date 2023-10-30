@@ -25,6 +25,7 @@ setup(
             "nodo_publicador_profe_no_tocar = control_turtlebot.viernes_profe_navegacion_odom_no_tocar:main",
             "nodo_publicador_domingo = control_turtlebot.domingo_julian_pruebas:main",
             "nodo_publicador_difuso = control_turtlebot.logica_difusa:main",
+            "nodo_publicador_difuso_v2 = control_turtlebot.logica_difusa_v2:main",
             
         ],
     },

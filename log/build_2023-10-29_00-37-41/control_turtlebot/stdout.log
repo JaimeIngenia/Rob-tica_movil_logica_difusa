@@ -1,0 +1,20 @@
+running develop
+running egg_info
+writing control_turtlebot.egg-info/PKG-INFO
+writing dependency_links to control_turtlebot.egg-info/dependency_links.txt
+writing entry points to control_turtlebot.egg-info/entry_points.txt
+writing requirements to control_turtlebot.egg-info/requires.txt
+writing top-level names to control_turtlebot.egg-info/top_level.txt
+reading manifest file 'control_turtlebot.egg-info/SOURCES.txt'
+writing manifest file 'control_turtlebot.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/jaime/ros2_ws/src/install/control_turtlebot/lib/python3.8/site-packages/control-turtlebot.egg-link (link to .)
+Installing nodo_publicador script to /home/jaime/ros2_ws/src/install/control_turtlebot/lib/control_turtlebot
+Installing nodo_publicador_difuso script to /home/jaime/ros2_ws/src/install/control_turtlebot/lib/control_turtlebot
+Installing nodo_publicador_difuso_v2 script to /home/jaime/ros2_ws/src/install/control_turtlebot/lib/control_turtlebot
+Installing nodo_publicador_domingo script to /home/jaime/ros2_ws/src/install/control_turtlebot/lib/control_turtlebot
+Installing nodo_publicador_profe_no_tocar script to /home/jaime/ros2_ws/src/install/control_turtlebot/lib/control_turtlebot
+Installing nodo_publicador_viernes script to /home/jaime/ros2_ws/src/install/control_turtlebot/lib/control_turtlebot
+
+Installed /home/jaime/ros2_ws/src/build/control_turtlebot
+running install_data

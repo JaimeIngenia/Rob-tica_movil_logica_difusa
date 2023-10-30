@@ -1,0 +1,28 @@
+[0.735s] Invoking command in '/home/jaime/ros2_ws/src/build/turtlebot3_navigation2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jaime/ros2_ws/install/pkg_entrega2_v_quieta:/home/jaime/ros2_ws/install/pkg_entrega2:/home/jaime/ros2_ws/install/pkg_entrega1_v2:/home/jaime/ros2_ws/install/pkg_entrega1:/home/jaime/ros2_ws/install/control_turtlebot:/home/jaime/ros2_ws/install/control_difuso:/home/jaime/turtlebot3_ws/install/turtlebot3_teleop:/home/jaime/turtlebot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake --build /home/jaime/ros2_ws/src/build/turtlebot3_navigation2 -- -j5 -l5
+[0.990s] Invoked command in '/home/jaime/ros2_ws/src/build/turtlebot3_navigation2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jaime/ros2_ws/install/pkg_entrega2_v_quieta:/home/jaime/ros2_ws/install/pkg_entrega2:/home/jaime/ros2_ws/install/pkg_entrega1_v2:/home/jaime/ros2_ws/install/pkg_entrega1:/home/jaime/ros2_ws/install/control_turtlebot:/home/jaime/ros2_ws/install/control_difuso:/home/jaime/turtlebot3_ws/install/turtlebot3_teleop:/home/jaime/turtlebot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake --build /home/jaime/ros2_ws/src/build/turtlebot3_navigation2 -- -j5 -l5
+[1.134s] Invoking command in '/home/jaime/ros2_ws/src/build/turtlebot3_navigation2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jaime/ros2_ws/install/pkg_entrega2_v_quieta:/home/jaime/ros2_ws/install/pkg_entrega2:/home/jaime/ros2_ws/install/pkg_entrega1_v2:/home/jaime/ros2_ws/install/pkg_entrega1:/home/jaime/ros2_ws/install/control_turtlebot:/home/jaime/ros2_ws/install/control_difuso:/home/jaime/turtlebot3_ws/install/turtlebot3_teleop:/home/jaime/turtlebot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake --install /home/jaime/ros2_ws/src/build/turtlebot3_navigation2
+[1.162s] -- Install configuration: ""
+[1.164s] -- Execute custom install script
+[1.164s] -- Up-to-date symlink: /home/jaime/ros2_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/launch/navigation2.launch.py
+[1.164s] -- Up-to-date symlink: /home/jaime/ros2_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/map/turtlebot3_world.pgm
+[1.164s] -- Up-to-date symlink: /home/jaime/ros2_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/map/turtlebot3_world.yaml
+[1.168s] -- Up-to-date symlink: /home/jaime/ros2_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/param/burger.yaml
+[1.168s] -- Up-to-date symlink: /home/jaime/ros2_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/param/waffle.yaml
+[1.168s] -- Up-to-date symlink: /home/jaime/ros2_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/param/waffle_pi.yaml
+[1.168s] -- Up-to-date symlink: /home/jaime/ros2_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/rviz/tb3_navigation2.rviz
+[1.168s] -- Up-to-date symlink: /home/jaime/ros2_ws/src/install/turtlebot3_navigation2/share/ament_index/resource_index/package_run_dependencies/turtlebot3_navigation2
+[1.168s] -- Up-to-date symlink: /home/jaime/ros2_ws/src/install/turtlebot3_navigation2/share/ament_index/resource_index/parent_prefix_path/turtlebot3_navigation2
+[1.168s] -- Up-to-date symlink: /home/jaime/ros2_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/environment/ament_prefix_path.sh
+[1.168s] -- Up-to-date symlink: /home/jaime/ros2_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/environment/ament_prefix_path.dsv
+[1.168s] -- Up-to-date symlink: /home/jaime/ros2_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/environment/path.sh
+[1.190s] -- Up-to-date symlink: /home/jaime/ros2_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/environment/path.dsv
+[1.190s] -- Up-to-date symlink: /home/jaime/ros2_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/local_setup.bash
+[1.191s] -- Up-to-date symlink: /home/jaime/ros2_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/local_setup.sh
+[1.191s] -- Up-to-date symlink: /home/jaime/ros2_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/local_setup.zsh
+[1.191s] -- Up-to-date symlink: /home/jaime/ros2_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/local_setup.dsv
+[1.191s] -- Symlinking: /home/jaime/ros2_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.dsv
+[1.191s] -- Up-to-date symlink: /home/jaime/ros2_ws/src/install/turtlebot3_navigation2/share/ament_index/resource_index/packages/turtlebot3_navigation2
+[1.191s] -- Up-to-date symlink: /home/jaime/ros2_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/cmake/turtlebot3_navigation2Config.cmake
+[1.191s] -- Up-to-date symlink: /home/jaime/ros2_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/cmake/turtlebot3_navigation2Config-version.cmake
+[1.191s] -- Up-to-date symlink: /home/jaime/ros2_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.xml
+[1.197s] Invoked command in '/home/jaime/ros2_ws/src/build/turtlebot3_navigation2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jaime/ros2_ws/install/pkg_entrega2_v_quieta:/home/jaime/ros2_ws/install/pkg_entrega2:/home/jaime/ros2_ws/install/pkg_entrega1_v2:/home/jaime/ros2_ws/install/pkg_entrega1:/home/jaime/ros2_ws/install/control_turtlebot:/home/jaime/ros2_ws/install/control_difuso:/home/jaime/turtlebot3_ws/install/turtlebot3_teleop:/home/jaime/turtlebot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake --install /home/jaime/ros2_ws/src/build/turtlebot3_navigation2

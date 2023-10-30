@@ -1,0 +1,16 @@
+[3.721s] Invoking command in '/home/jaime/ros2_ws/src/build/control_difuso': PYTHONPATH=/home/jaime/ros2_ws/src/build/control_difuso/prefix_override:/home/jaime/ros2_ws/src/install/control_difuso/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/jaime/ros2_ws/src/build/control_difuso/build --no-deps install_data
+[4.293s] running develop
+[4.407s] running egg_info
+[4.410s] writing control_difuso.egg-info/PKG-INFO
+[4.429s] writing dependency_links to control_difuso.egg-info/dependency_links.txt
+[4.431s] writing entry points to control_difuso.egg-info/entry_points.txt
+[4.436s] writing requirements to control_difuso.egg-info/requires.txt
+[4.437s] writing top-level names to control_difuso.egg-info/top_level.txt
+[4.566s] reading manifest file 'control_difuso.egg-info/SOURCES.txt'
+[4.568s] writing manifest file 'control_difuso.egg-info/SOURCES.txt'
+[4.682s] running build_ext
+[4.684s] Creating /home/jaime/ros2_ws/src/install/control_difuso/lib/python3.8/site-packages/control-difuso.egg-link (link to .)
+[4.687s] 
+[4.688s] Installed /home/jaime/ros2_ws/src/build/control_difuso
+[4.689s] running install_data
+[4.826s] Invoked command in '/home/jaime/ros2_ws/src/build/control_difuso' returned '0': PYTHONPATH=/home/jaime/ros2_ws/src/build/control_difuso/prefix_override:/home/jaime/ros2_ws/src/install/control_difuso/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/jaime/ros2_ws/src/build/control_difuso/build --no-deps install_data

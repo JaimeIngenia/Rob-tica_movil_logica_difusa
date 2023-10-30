@@ -61,69 +61,68 @@ class difusa(Node):
 
         self.get_logger().info("Actividad 3 ..... start .....")
 
-        def sensor(self, msg):
-            self.rangos = msg.ranges
-            self.estado_inicial_sensor = True
+    def sensor(self, msg):
+        self.rangos = msg.ranges
+        self.estado_inicial_sensor = True
 
-        
-        def odomcallback(self, msg):
-            pose = msg.pose.pose
+    
+    def odomcallback(self, msg):
+        pose = msg.pose.pose
 
-            self.postn = pose.position
-            self.orient = pose.orientation
-            self.last_pose_x = self.postn.x
-            self.last_pose_y = self.postn.y
+        self.postn = pose.position
+        self.orient = pose.orientation
+        self.last_pose_x = self.postn.x
+        self.last_pose_y = self.postn.y
 
-            _,_,self.last_pose_yaw = self.eulerFromQuaternion(self.orient.x, self.orient.y, self.orient.z, self.orient.w)
+        _,_,self.last_pose_yaw = self.eulerFromQuaternion(self.orient.x, self.orient.y, self.orient.z, self.orient.w)
 
-            self.initOdom = True
-            #MUESTRA  LA UBICACION ACTUAL EN LA TERMINAL
-            self.get_logger().info(f'Coordenada: x={self.last_pose_x}, y={self.last_pose_y}, yaw={self.last_pose_yaw}')
+        self.initOdom = True
+        #MUESTRA  LA UBICACION ACTUAL EN LA TERMINAL
+        self.get_logger().info(f'Coordenada: x={self.last_pose_x}, y={self.last_pose_y}, yaw={self.last_pose_yaw}')
 
-        def updateOdom(self):
-            if self.initOdom == True:
-                self.generate_path()
+    def updateOdom(self):
+        if self.initOdom == True:
+            self.generate_path()  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    def generate_path(self):
+        
+        vel = Twist()
 
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        def generate_path(self):
-            
-            vel = Twist()
+        rango1 = np.flip(np.array(self.rangos[1:45]))
+        rango2 = np.flip(np.array(self.rangos[315:]))
+        rango = np.concatenate((rango1,rango2),axis=0)
 
-            rango1 = np.flip(np.array(self.rangos[1:45]))
-            rango2 = np.flip(np.array(self.rangos[315:]))
-            rango = np.concatenate((rango1,rango2),axis=0)
+        rango_ord=np.argsort(rango)
 
-            rango_ord=np.argsort(rango)
+        if len(rango) >0:
+            rango_ord = np.argsort(rango)
+            indice = rango_ord[0]
+            lidar = rango[indice]
 
-            if len(rango) >0:
-                rango_ord = np.argsort(rango)
-                indice = rango_ord[0]
-                lidar = rango[indice]
-
-                if type(rango[indice]) != np.float32:
-                    lidar = 1
+            if type(rango[indice]) != np.float32:
+                lidar = 1
 
 
 
@@ -219,7 +218,8 @@ class difusa(Node):
             #minuto 15:42
 
             print("VElocidad del linear MIRAR JULIAN:" , simulador.output[ "velocidad_ventilador" ], "km/s")
-#CAlcula punto objetivo se recalcula constantemente
+            
+            #CAlcula punto objetivo se recalcula constantemente
             self.distance = math.sqrt((self.goal_pose_x - self.last_pose_x)**2 + (self.goal_pose_y -self.last_pose_y)**2)
 
             print(self.distance)
@@ -233,7 +233,7 @@ class difusa(Node):
 
                 vel.linear.x = 0.06
                 #minuto 15:45 ok
-  
+
             if self.distance < 0.2:
                 self.angle = self.goal_pose_yaw -self.last_pose_yaw
 

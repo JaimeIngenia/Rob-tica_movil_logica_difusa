@@ -1,0 +1,22 @@
+[3.659s] Invoking command in '/home/jaime/ros2_ws/src/build/control_turtlebot': PYTHONPATH=/home/jaime/ros2_ws/src/build/control_turtlebot/prefix_override:/home/jaime/ros2_ws/src/install/control_turtlebot/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/jaime/ros2_ws/src/build/control_turtlebot/build --no-deps install_data
+[4.445s] running develop
+[4.873s] running egg_info
+[4.879s] writing control_turtlebot.egg-info/PKG-INFO
+[4.880s] writing dependency_links to control_turtlebot.egg-info/dependency_links.txt
+[4.881s] writing entry points to control_turtlebot.egg-info/entry_points.txt
+[4.896s] writing requirements to control_turtlebot.egg-info/requires.txt
+[4.897s] writing top-level names to control_turtlebot.egg-info/top_level.txt
+[5.005s] reading manifest file 'control_turtlebot.egg-info/SOURCES.txt'
+[5.008s] writing manifest file 'control_turtlebot.egg-info/SOURCES.txt'
+[5.142s] running build_ext
+[5.145s] Creating /home/jaime/ros2_ws/src/install/control_turtlebot/lib/python3.8/site-packages/control-turtlebot.egg-link (link to .)
+[5.150s] Installing nodo_publicador script to /home/jaime/ros2_ws/src/install/control_turtlebot/lib/control_turtlebot
+[5.152s] Installing nodo_publicador_difuso script to /home/jaime/ros2_ws/src/install/control_turtlebot/lib/control_turtlebot
+[5.155s] Installing nodo_publicador_difuso_v2 script to /home/jaime/ros2_ws/src/install/control_turtlebot/lib/control_turtlebot
+[5.158s] Installing nodo_publicador_domingo script to /home/jaime/ros2_ws/src/install/control_turtlebot/lib/control_turtlebot
+[5.161s] Installing nodo_publicador_profe_no_tocar script to /home/jaime/ros2_ws/src/install/control_turtlebot/lib/control_turtlebot
+[5.165s] Installing nodo_publicador_viernes script to /home/jaime/ros2_ws/src/install/control_turtlebot/lib/control_turtlebot
+[5.169s] 
+[5.170s] Installed /home/jaime/ros2_ws/src/build/control_turtlebot
+[5.171s] running install_data
+[5.460s] Invoked command in '/home/jaime/ros2_ws/src/build/control_turtlebot' returned '0': PYTHONPATH=/home/jaime/ros2_ws/src/build/control_turtlebot/prefix_override:/home/jaime/ros2_ws/src/install/control_turtlebot/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/jaime/ros2_ws/src/build/control_turtlebot/build --no-deps install_data

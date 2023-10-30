@@ -3,107 +3,64 @@ import skfuzzy as fuzz
 from skfuzzy import control as crtl
 import numpy as np
 
+longitud = crtl.Antecedent(np.arange(0.2,1,0.01),"longitud")
+rumbo = crtl.Antecedent(np.arange(0,80,1),"rumbo")
+vel_W = crtl.Consequent(np.arange(-1,1,0.01),"vel_W")
+vel_v = crtl.Consequent(np.arange(0,1,0.01),"vel_v")
 
+longitud['cerca'] = fuzz.trimf(longitud.universe, [0.19,0.3,0.6])
+longitud['lejos'] = fuzz.trimf(longitud.universe, [0.4,0.7,1.1])
 
-distancia = crtl.Antecedent(np.arange(0.2,1,0.01),"distancia")
-orientacion = crtl.Antecedent(np.arange(0,80,1),"orientacion")
-velocidad_angular = crtl.Antecedent(np.arange(-1,1,0.01),"velocidad_angular")
-velocidad_lineal = crtl.Antecedent(np.arange(0,1,0.01),"velocidad_lineal")
-
-#paso 2)#DEfiniendo funciones de pertenencia
-
-#Variable entrada de distancia
-
-distancia['cerca'] = fuzz.trimf(distancia.universe, [0.19,0.3,0.6])#punta del robot 0.19 y termina en 0.3 
-distancia['lejos'] = fuzz.trimf(distancia.universe, [0.4,0.7,1.1])
-
-distancia.view()
+longitud.view()
 plt.show()
 
-
-#Variable entrada de distancia
-
-orientacion['izq'] = fuzz.trimf(orientacion.universe, [0.0,45,45])#[-1,45,45])
-orientacion['der'] = fuzz.trimf(orientacion.universe, [45,45,90])#[45,45,91])
-
-#import matplotlib.pyplot as plt
-#orientacion.view()
-#plt.show()
-
-
-
-#Variable entrada de velocidad_lineal
-
-velocidad_lineal['baja'] = fuzz.trimf(velocidad_lineal.universe, [0.0, 0.07, 0.15])
-velocidad_lineal['alta'] = fuzz.trimf(velocidad_lineal.universe, [0.07, 0.15, 0.2])
-
-#GRaficar las funciones de pertenencia
-velocidad_lineal.view()
-#velocidad_ventilador.view()
+rumbo['izq'] = fuzz.trimf(rumbo.universe, [0.0,45,45])#[-1,45,45])
+rumbo['der'] = fuzz.trimf(rumbo.universe, [45,45,90])#[45,45,91])
+rumbo.view()
 plt.show()
 
-#Variable entrada de velocidad_angular
-#ES PARA QUE TOME LA ORIENTACIÒN DERECHO O IZQUIERDA
+vel_v['baja'] = fuzz.trimf(vel_v.universe, [0.0, 0.14, 0.30])
+vel_v['alta'] = fuzz.trimf(vel_v.universe, [0.14, 0.30, 0.4])
 
-velocidad_angular['izq'] = fuzz.trimf(velocidad_angular.universe, [-1,-0.5,-0.01])#[-1,-0.5,-0.01])
-velocidad_angular['centro'] = fuzz.trimf(velocidad_angular.universe, [-0.01,0,0.01])#[-0.01,0,0.01])
-velocidad_angular['der'] = fuzz.trimf(velocidad_angular.universe, [0.01,0.5,1])#[0.01,0.5,1])
+vel_v.view()
+plt.show()
 
+vel_W['izq'] = fuzz.trimf(vel_W.universe, [-1,-0.5,-0.01])#[-1,-0.5,-0.01])
+vel_W['centro'] = fuzz.trimf(vel_W.universe, [-0.01,0,0.01])#[-0.01,0,0.01])
+vel_W['der'] = fuzz.trimf(vel_W.universe, [0.01,0.5,1])#[0.01,0.5,1])
 
+vel_W.view()
+plt.show()
 
 regla1 = crtl.Rule(
-    distancia['lejos'] & orientacion["der"],
-    (velocidad_lineal["alta"], velocidad_angular["centro"])
+    longitud['lejos'] & rumbo["der"],
+    (vel_v["alta"], vel_W["centro"])
     )
 
 regla2 = crtl.Rule(
-    distancia["lejos"] & orientacion["izq"], 
-    (velocidad_lineal["alta"],velocidad_angular["centro"])
+    longitud["lejos"] & rumbo["izq"], 
+    (vel_v["alta"],vel_W["centro"])
     )
 
 regla3 = crtl.Rule(
-    distancia["cerca"] & orientacion["der"], 
-    (velocidad_lineal["baja"],velocidad_angular["izq"])
+    longitud["cerca"] & rumbo["der"], 
+    (vel_v["baja"],vel_W["izq"])
     )
 
 regla4 = crtl.Rule(
-    distancia["cerca"] & orientacion["izq"], 
-    (velocidad_lineal["baja"],velocidad_angular["der"])
+    longitud["cerca"] & rumbo["izq"], 
+    (vel_v["baja"],vel_W["der"])
     )
-
 
 controlador = crtl.ControlSystem([regla1,regla2,regla3,regla4])
 simulador = crtl.ControlSystemSimulation(controlador)
 
-simulador.input["distancia"] = 0.3
-simulador.input["orientacion"] = 80
-#simulador.input["distancia"] = lidar
+simulador.input["longitud"] = 0.3
+simulador.input["rumbo"] = 80
 
 simulador.compute()
 
-print("VElocidad del ventilador MIRAR JULIAN y ANdres:" , simulador.output[ "velocidad_ventilador" ], "km/s")
-
-
-#GRaficar las funciones de pertenencia
-#distancia.view()
-#velocidad_ventilador.view()
-#plt.show()
-
-
-
-
-#PEGA DE LOGICA_DIFUSA.PY
-#Definir entradas (antecedentes y consecuentes)
-
-#distancia   = crtl.Antecedent(np.arange(0.2 , 1 , 0.01), "distancia")
-
-#orientacion = crtl.Antecedent(np.arange(0.0 , 90, 0.01), "orientacion")
-
- #Definir  salidas (antecedentes y consecuentes)
-
-#velocidad_lineal  = crtl.Consequent(np.arange( 0.0 , 0.2 ,0.01), "velocidad_lineal")
-
-#velocidad_angular = crtl.Consequent(np.arange(-1   ,  1  , 0.01), "velocidad_angular")
+print("VElocidad del velocidad v y la velocidad w MIRAR JULIAN y ANdres:" , simulador.output[ "vel_v" ], simulador.output[ "vel_W" ] , "km/s")
 
  
 

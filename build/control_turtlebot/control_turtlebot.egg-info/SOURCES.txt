@@ -5,6 +5,7 @@ control_turtlebot/__init__.py
 control_turtlebot/domingo_julian_pruebas.py
 control_turtlebot/logica_difusa (copy)_v1_ITMinicial.py
 control_turtlebot/logica_difusa.py
+control_turtlebot/logica_difusa_v2.py
 control_turtlebot/odomeuler.py
 control_turtlebot/viernes_navegacion_odometria.py
 control_turtlebot/viernes_profe_navegacion_odom_no_tocar.py
