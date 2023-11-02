@@ -15,6 +15,7 @@ import matplotlib.pyplot as plt
 import time
 import warnings
 
+
 warnings.filterwarnings("ignore", category=UserWarning)
 
 class difusa(Node):
@@ -58,6 +59,7 @@ class difusa(Node):
         self.last_pose_y = self.postn.y
         _,_,self.last_pose_yaw = self.eulerFromQuaternion(self.orient.x, self.orient.y, self.orient.z, self.orient.w)
         self.initOdom = True
+        
 
 
     def updateOdom(self):
@@ -92,7 +94,11 @@ class difusa(Node):
             self.angular_velocity = 0.06
             vel, self.step = self.Turn(self.angle, self.angular_velocity, self.step)
         #Paso 2, desplazar al robot
-            print("step:", self.step)
+
+            
+
+                # print("step:", self.step)
+            
         elif self.step == 2:
 
             
@@ -109,15 +115,25 @@ class difusa(Node):
                 lidar = rango[indice]
                 print("COmportamiento lidar:"+ str(lidar))
 
-                # if (lidar < 0.4 ):
-                #      self.esquivar(vel)
+                       
                 
 
                 #if type(rango[indice]) != np.float32:
                 self.ditance = math.sqrt((self.goal_pose_x - self.last_pose_x)**2 + (self.goal_pose_y - self.last_pose_y)**2 )
                 if lidar < 0.4:
-                    #lidar = 1
 
+                        # Verifica si hay un obstáculo dentro de un rango específico
+                    #obstacle_detected = min(self.rangos) < 0.4
+
+                    # Verifica si el robot está suficientemente orientado hacia el objetivo
+                    #is_facing_goal = abs(self.path_theta - self.last_pose_yaw) < 1
+                    #print("Esta utilizadno la funciòn ABS",  abs(self.path_theta - self.last_pose_yaw))
+
+
+                    # Activa la lógica difusa solo si hay un obstáculo y el robot no está frente al objetivo
+                    #lidar = 1
+                    #if obstacle_detected and not is_facing_goal:
+                    print("Llamado a la lògica difusa")
                     #paso 1) DEclara variables de entrada y saldia
                     distancia = crtl.Antecedent(np.arange(0.2,1,0.01),"distancia")
                     orientacion = crtl.Antecedent(np.arange(0,80,1),"orientacion")
@@ -161,16 +177,23 @@ class difusa(Node):
                     
                     controlador = crtl.ControlSystem([regla1,regla2,regla3,regla4])
                     simulador = crtl.ControlSystemSimulation(controlador)
+
+                    indice = 25
+
+                    print("Input antes de *************************************** :" + str( indice ))
                     simulador.input["orientacion"] = indice
                     simulador.input["distancia"] = lidar
 
-                    print("Observar el input :" + str( indice ))
-                    print("Observar el lidar :" + str( lidar ))
+                    # print("Observar el input :" + str( indice ))
+                    # print("Observar el lidar :" + str( lidar ))
 
                     simulador.compute()
 
                     vel.linear.x = simulador.output[ 'velocidad_lineal']  
                     vel.angular.z =-simulador.output[ 'velocidad_angular']  
+
+                    print("Observar el V_W :" + str(vel.linear.z ))
+                    print("Observar el v_lineal :" + str( vel.linear.x  ))
 
                     self.cmd_vel_pub.publish(vel)
 
