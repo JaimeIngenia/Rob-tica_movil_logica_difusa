@@ -11,19 +11,19 @@ vel_v = crtl.Consequent(np.arange(0,1,0.01),"vel_v")
 longitud['cerca'] = fuzz.trimf(longitud.universe, [0.19,0.3,0.6])
 longitud['lejos'] = fuzz.trimf(longitud.universe, [0.4,0.7,1.1])
 
-longitud.view()
-plt.show()
+# longitud.view()
+# plt.show()
 
 rumbo['izq'] = fuzz.trimf(rumbo.universe, [0.0,45,45])#[-1,45,45])
 rumbo['der'] = fuzz.trimf(rumbo.universe, [45,45,90])#[45,45,91])
-rumbo.view()
-plt.show()
+# rumbo.view()
+# plt.show()
 
 vel_v['baja'] = fuzz.trimf(vel_v.universe, [0.0, 0.14, 0.30])
 vel_v['alta'] = fuzz.trimf(vel_v.universe, [0.14, 0.30, 0.4])
 
-vel_v.view()
-plt.show()
+# vel_v.view()
+# plt.show()
 
 vel_W['izq'] = fuzz.trimf(vel_W.universe, [-1,-0.5,-0.01])#[-1,-0.5,-0.01])
 vel_W['centro'] = fuzz.trimf(vel_W.universe, [-0.01,0,0.01])#[-0.01,0,0.01])

@@ -63,27 +63,11 @@ class difusa(Node):
     def updateOdom(self):
         if self.initOdom == True:
             self.generate_path()  
-
-    
-    def rotacion(self):
-        #self.acel_actual = 0.05 # antes la velocidad de incremento era 0.5
-        self.vel_lineal = 0.5
-        #self.giro=1 
-
     
 
     def generate_path(self):
         
         vel = Twist()
-
-
-        # if len(rango) >0:
-        #     rango_ord = np.argsort(rango)
-        #     indice = rango_ord[0]
-        #     lidar = rango[indice]
-
-        #     if type(rango[indice]) != np.float32:
-        #         lidar = 1
 
         #Paso 1, orientar al robot
         if self.step == 1:
@@ -107,15 +91,10 @@ class difusa(Node):
                 rango_ord = np.argsort(rango)
                 indice = rango_ord[0]
                 lidar = rango[indice]
-                print("COmportamiento lidar:"+ str(lidar))
-
-                # if (lidar < 0.4 ):
-                #      self.esquivar(vel)
-                
 
                 #if type(rango[indice]) != np.float32:
                 self.ditance = math.sqrt((self.goal_pose_x - self.last_pose_x)**2 + (self.goal_pose_y - self.last_pose_y)**2 )
-                if lidar < 0.4:
+                if lidar < 1:
                     #lidar = 1
 
                     #paso 1) DEclara variables de entrada y saldia
@@ -163,9 +142,6 @@ class difusa(Node):
                     simulador = crtl.ControlSystemSimulation(controlador)
                     simulador.input["orientacion"] = indice
                     simulador.input["distancia"] = lidar
-
-                    print("Observar el input :" + str( indice ))
-                    print("Observar el lidar :" + str( lidar ))
 
                     simulador.compute()
 
@@ -237,14 +213,6 @@ class difusa(Node):
             step = step + 1
 
         return vel, step
-    
-    def esquivar(self,vel):
-        print("Esta esquivando.....***")
-        vel.linear.x = 0.0  
-        vel.angular.z = 0.5
-        if self.giro==0:
-            self.rotacion()
-        #self.Turn()
     
 
 

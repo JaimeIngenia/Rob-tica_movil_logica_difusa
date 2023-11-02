@@ -3,6 +3,9 @@ import math
 from rclpy.node import Node
 from nav_msgs.msg import Odometry
 from geometry_msgs.msg import Twist
+from skfuzzy import control as crtl
+import skfuzzy as fuzz
+import numpy as np
 
 class ControlNavegacion(Node):
     def __init__(self):
@@ -33,6 +36,7 @@ class ControlNavegacion(Node):
         _, _, self.last_pose_yaw = self.Quaternion2Euler(self.orient.x, self.orient.y, self.orient.z, self.orient.w)
         self.initOdom = True
 
+
     def updateOdom(self):
         if self.initOdom == True:
             self.generate_path()
@@ -45,10 +49,15 @@ class ControlNavegacion(Node):
             self.angle = self.path_theta - self.last_pose_yaw
             self.angular_velocity = 0.06
             vel, self.step = self.Turn(self.angle, self.angular_velocity, self.step)
+
+            print("step:", self.step)
         #Paso 2, desplazar al robot
         elif self.step == 2:
+
             self.ditance = math.sqrt((self.goal_pose_x - self.last_pose_x)**2 + (self.goal_pose_y - self.last_pose_y)**2 )
             self.linear_velocity = 0.1 
+            print("llamado a straight")
+           
             vel, self.step = self.Straight(self.ditance, self.linear_velocity, self.step)
         #Paso 3, girar el robot
         elif self.step == 3:
@@ -83,6 +92,7 @@ class ControlNavegacion(Node):
         return vel, step
     
     def Straight(self, distance , linear_velocity, step):
+    
         vel = Twist()
         if distance > 0.08:
             vel.linear.x = linear_velocity
@@ -98,3 +108,12 @@ def main(args = None):
     rclpy.spin(control)
     control.destroy_node()
     rclpy.shutdown()
+
+
+    [-1,-0.575,-0.25])
+
+    [-0.25,0,0.25])
+
+    [0.25,0.575,1])
+
+  
