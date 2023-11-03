@@ -227,8 +227,11 @@ class difusa(Node):
             if lidar >0.5 and self.rangos[ 90] > 0.19 and self.rangos [ 270] > 0.19:
                 #calcular los valores y dar el giro
                 self.path_theta = math.atan2(self.goal_pose_y - self.last_pose_y , self.goal_pose_x - self.last_pose_x)
+                
                 self.angle = self.path_theta - self.last_pose_yaw
+                
                 self.angular_velocity = 0.5
+                
                 vel, self.step = self.Turn(self.angle, self.angular_velocity, self.step)
 
                 vel.linear.x = 0.06
