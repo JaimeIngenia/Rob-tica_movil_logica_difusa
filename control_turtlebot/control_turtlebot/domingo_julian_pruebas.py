@@ -29,8 +29,8 @@ class difusa(Node):
         self.last_pose_x = 0.0
         self.last_pose_y = 0.0
         self.last_pose_yaw = 0.0
-        self.goal_pose_x = -1.76
-        self.goal_pose_y = -0.16
+        self.goal_pose_x = -0.5#-1.76
+        self.goal_pose_y = -1.85#-0.16
         self.goal_pose_yaw = 1.57
         self.step = 1
         self.ruta=[]
@@ -91,6 +91,9 @@ class difusa(Node):
         self.angular_velocity = 0.06
         vel, self.step = self.Turn(self.angle, self.angular_velocity, self.step)
         #Paso 2, desplazar al robot
+        
+        # Comprueba si el robot ha llegado al punto de destino
+        self.parada()
 
         rango1 = np.flip(np.array(self.rangos[1:45]))
         #print(rango1)
@@ -314,6 +317,17 @@ class difusa(Node):
         angular = simulador.output[ 'velocidad_angular']  
         
         return lineal, angular
+    
+    
+    def parada(self, distancia_umbral=0.2):
+        distancia = math.sqrt((self.goal_pose_x - self.last_pose_x)**2 + (self.goal_pose_y - self.last_pose_y)**2)
+
+        if distancia < distancia_umbral:
+            vel = Twist()
+            vel.linear.x = 0.0
+            vel.angular.z = 0.0
+            self.cmd_vel_pub.publish(vel)
+            self.get_logger().info("Robot ha llegado al punto de destino.")
 
 
 def main(args=None):
